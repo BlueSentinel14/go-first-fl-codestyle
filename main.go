@@ -99,24 +99,24 @@ func start_training(charName, charClass string) string {
 
 // обратите внимание на имя функции и имена переменных
 func choiseCharClass() string {
-	var approve_choice string
-	var char_class string
+	var approveChoice string
+	var charClass string
 
-	for approve_choice != "y" {
+	for approveChoice != "y" {
 		fmt.Print("Введи название персонажа, за которого хочешь играть: Воитель — warrior, Маг — mage, Лекарь — healer: ")
-		fmt.Scanf("%s\n", &char_class)
-		if char_class == "warrior" {
+		fmt.Scanf("%s\n", &charClass)
+		if charClass == "warrior" {
 			fmt.Println("Воитель — дерзкий воин ближнего боя. Сильный, выносливый и отважный.")
-		} else if char_class == "mage" {
+		} else if charClass == "mage" {
 			fmt.Println("Маг — находчивый воин дальнего боя. Обладает высоким интеллектом.")
-		} else if char_class == "healer" {
+		} else if charClass == "healer" {
 			fmt.Println("Лекарь — могущественный заклинатель. Черпает силы из природы, веры и духов.")
 		}
 		fmt.Print("Нажми (Y), чтобы подтвердить выбор, или любую другую кнопку, чтобы выбрать другого персонажа: ")
-		fmt.Scanf("%s\n", &approve_choice)
-		approve_choice = strings.ToLower(approve_choice)
+		fmt.Scanf("%s\n", &approveChoice)
+		approveChoice = strings.ToLower(approveChoice)
 	}
-	return char_class
+	return charClass
 }
 
 // обратите внимание на имена переменных
